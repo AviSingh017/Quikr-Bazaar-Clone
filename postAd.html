@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="postAd.css">
+
+</head>
+<body>
+    <form action=""id="postAdForm">
+        <label for="id">Product ID</label>   
+        <input type="text" placeholder="Product id">
+        
+
+        <label for="brand">Brand</label>       
+        <input type="text" placeholder="Enter Brand Name">
+        
+
+        <label for="imageLink">Image Link</label>
+        <input type="text" placeholder="Image link..">
+        
+
+        <label for="price">Price</label>  
+        <input type="text" placeholder="Enter Price">
+    
+
+        <label for="category">Category</label>
+        <input type="text" placeholder="Category...">
+
+        <button type="submit">Post Ad Now</button>
+    </form>
+</body>
+
+</html>
+
+<!-- let cloth=[
+        {
+            id:1,
+            brand:"GAMMALBYN",
+            img:"https://www.ikea.com/in/en/images/products/gammalbyn-3-seat-sofa-grey__0868927_pe781435_s5.jpg?f=xxs",
+            price:"20,990",
+            category:"sofa set"
+        },
+        {
+            id:2,
+            brand:"LANDSKRONA",
+            img:"https://www.ikea.com/in/en/images/products/landskrona-3-seat-sofa-gunnared-light-green-wood__0826895_pe680192_s5.jpg?f=xxs",
+            price:"59,999",
+            category:"sofa set"
+        },  
+         {
+            id:3,
+            brand:"LINANAS",
+            img:"https://www.ikea.com/in/en/images/products/linanaes-3-seat-sofa-with-chaise-longue-vissle-beige__1013905_pe829459_s5.jpg?f=xxs",
+            price:"34,490",
+            category:"sofa set"
+        }, 
+          {
+            id:4,
+            brand:"VIMLE",
+            img:"https://www.ikea.com/in/en/images/products/vimle-3-seat-sofa-with-wide-armrests-saxemara-light-blue__0951907_pe801423_s5.jpg?f=xxs",
+            price:"54,990",
+            category:"sofa set"
+        }, 
+          {
+            id:5,
+            brand:"STRANDMON",
+            img:"https://www.ikea.com/in/en/images/products/strandmon-wing-chair-grey__0973258_pe811962_s5.jpg?f=xxs",
+            price:"15,990",
+            category:"sofa set"
+        }, 
+          {
+            id:6,
+            brand:"LINANAS",
+            img:"https://www.ikea.com/in/en/images/products/linanaes-3-seat-sofa-vissle-dark-grey__1013900_pe829454_s5.jpg?f=xxs",
+            price:"29,999",
+            category:"sofa set"
+        },
+
+          {
+            id:7,
+            brand:"KINIK",
+            img:"https://www.ikea.com/in/en/images/products/kivik-3-seat-sofa-with-chaise-longue-tresund-anthracite__1124220_pe875082_s5.jpg?f=xxs",
+            price:"72,999",
+            category:"sofa set"
+        },  
+         {
+            id:8,
+            brand:"LINANAS",
+            img:"https://www.ikea.com/in/en/images/products/linanaes-2-seat-sofa-vissle-beige__0972126_pe811548_s5.jpg?f=xxs",
+            price:"23,999",
+            category:"sofa set"
+        },
+        {
+            id:9,
+            brand:"GRONLID",
+            img:"https://www.ikea.com/in/en/images/products/groenlid-3-seat-sofa-bed-with-chaise-longue-ljungen-light-green__0622029_pe690288_s5.jpg?f=xxs",
+            price:"99,990",
+            category:"sofa set"
+        },
+          {
+            id:10,
+            brand:"GRONLID",
+            img:"https://www.ikea.com/in/en/images/products/groenlid-4-seat-sofa-with-chaise-longues-ljungen-light-red__0852577_pe780184_s5.jpg?f=xxs",
+            price:"1,09,990",
+            category:"sofa set"
+        },
+        {
+            id:11,
+            brand:"EKENASET",
+            img:"https://www.ikea.com/in/en/images/products/ekenaeset-3-seat-sofa-kelinge-grey-turquoise__1109713_pe870181_s5.jpg?f=xxs",
+            price:"37,990",
+            category:"sofa set"
+        },
+        {
+            id:12,
+            brand:"GLADSTAND",
+            img:"https://www.ikea.com/images/a-bedroom-with-a-tufjord-dark-green-upholstered-bed-frame-2--4196cab6a63dfb0e2d36d1f013dddcdb.jpg?f=xxs",
+            price:"69,999",
+            category:"bed"
+        },
+        {
+            id:13,
+            brand:"NODELAND",
+            img:"https://www.ikea.com/in/en/images/products/gladstad-upholstered-bed-2-storage-boxes-kabusa-light-grey__1101371_pe866632_s5.jpg?f=xxs",
+            price:"28,490",
+            category:"bed"
+        },
+        {
+            id:14,
+            brand:"INDANAS",
+            img:"https://www.ikea.com/in/en/images/products/idanaes-upholstered-ottoman-bed-gunnared-dark-grey__1079006_pe857430_s5.jpg?f=xxs",
+            price:"1,17,888",
+            category:"bed"
+        },
+        {
+            id:15,
+            brand:"MALAM",
+            img:"https://www.ikea.com/in/en/images/products/malm-ottoman-bed-white__1154392_pe886041_s5.jpg?f=xxs",
+            price:"21,999",
+            category:"bed"
+        },
+        {
+            id:16,
+            brand:"GRIMSBU",
+            img:"https://www.ikea.com/in/en/images/products/grimsbu-bed-frame-white__1101992_pe866802_s5.jpg?f=xxs",
+            price:"25,999",
+            category:"bed"
+        },
+        {
+            id:17,
+            brand:"VAVELSTAD",
+            img:"https://www.ikea.com/in/en/images/products/vevelstad-bed-frame-white__1097674_pe865098_s5.jpg?f=xxs",
+            price:"7,399",
+            category:"bed"
+        },
+        {
+            id:18,
+            brand:"SLATTUM",
+            img:"https://www.ikea.com/in/en/images/products/slattum-upholstered-bed-frame-knisa-light-grey__1101373_pe866633_s5.jpg?f=xxs",
+            price:"11,990",
+            category:"bed"
+        },
+        {
+            id:19,
+            brand:"SLAKET",
+            img:"https://www.ikea.com/in/en/images/products/slaekt-bed-frame-with-underbed-and-storage-white__0876382_pe691863_s5.jpg?f=xxs",
+            price:"21,899",
+            category:"bed"
+        },
+        {
+            id:20,
+            brand:"Allen Solly",
+            img:"https://www.ikea.com/in/en/images/products/songesand-bedroom-furniture-set-of-5-white__1102144_pe866545_s5.jpg?f=xxs",
+            price:"56,999",
+            category:"bed"
+        },
+        {
+            id:21,
+            brand:"little Kangaroos",
+            img:"https://www.ikea.com/in/en/images/products/songesand-bed-frame-brown__1101534_pe866713_s5.jpg?f=xxs",
+            price:"16,799",
+            category:"bed"
+        },
+        {
+            id:22,
+            brand:"Lilliput",
+            img:"https://www.ikea.com/in/en/images/products/sagstua-bed-frame-black__1101987_pe866798_s5.jpg?f=xxs",
+            price:"19,999",
+            category:"bed"
+        },
+        {
+            id:23,
+            brand:"RAKKESTAD",
+            img:"https://www.ikea.com/in/en/images/products/rakkestad-wardrobe-with-3-doors-black-brown__0823988_pe776019_s5.jpg?f=xxs",
+            price:"20,000",
+            category:"Almirah"
+        },
+        {
+            id:24,
+            brand:"KLEPPSTAD",
+            img:"https://www.ikea.com/in/en/images/products/kleppstad-wardrobe-with-sliding-doors-white__0823548_pe775916_s5.jpg?f=xxs",
+            price:"29,899",
+            category:"Almirah"
+        },
+        {
+            id:25,
+            brand:"MUSKEN",
+            img:"https://www.ikea.com/in/en/images/products/musken-wardrobe-with-2-doors-3-drawers-white__0650335_pe706131_s5.jpg?f=xxs",
+            price:"32,699",
+            category:"Almirah"
+        },
+        {
+            id:26,
+            brand:"VUKU",
+            img:"https://www.ikea.com/in/en/images/products/vuku-wardrobe-white__0498108_pe629461_s5.jpg?f=xxs",
+            price:"15,999",
+            category:"Almirah"
+        },{
+            id:27,
+            brand:"PAX",
+            img:"https://www.ikea.com/in/en/images/products/pax-wardrobe-white-hasvik-white__0856048_pe554735_s5.jpg?f=xxs",
+            price:"25,999",
+            category:"Almirah"
+        },
+        {
+            id:28,
+            brand:"Sashay",
+            img:"https://www.ikea.com/in/en/images/products/smagoera-wardrobe-white__0774692_pe756737_s5.jpg?f=xxs",
+            price:"12,899",
+            category:"Almirah"
+        },
+        {
+            id:29,
+            brand:"PLASTA",
+            img:"https://www.ikea.com/in/en/images/products/smastad-platsa-wardrobe-white-white-with-4-drawers__1003102_pe825037_s5.jpg?f=xxs",
+            price:"21,499",
+            category:"Almirah"
+        },
+        {
+            id:30,
+            brand:"NIKOSON",
+            img:"https://www.ikea.com/in/en/images/products/platsa-wardrobe-with-1-door-white-fonnes-white__1026114_pe834365_s5.jpg?f=xxs",
+            price:"31,299",
+            category:"Almirah"
+        },
+        {
+            id:31,
+            brand:"NJKISON",
+            img:"https://www.ikea.com/in/en/images/products/sundvik-wardrobe-white__0876034_pe613731_s5.jpg?f=xxs",
+            price:"21,299",
+            category:"Almirah"
+        },
+        {
+            id:32,
+            brand:"ISON",
+            img:"https://www.ikea.com/in/en/images/products/visthus-wardrobe-grey-white__0858537_pe644340_s5.jpg?f=xxs",
+            price:"19,299",
+            category:"Almirah"
+        },
+        {
+            id:32,
+            brand:"BONSON",
+            img:"https://www.ikea.com/in/en/images/products/pax-forsand-wardrobe-combination-white-stained-oak-effect-white-stained-oak-effect__1024701_pe833637_s5.jpg?f=xxs",
+            price:"13,299",
+            category:"Almirah"
+        },
+        {
+            id:32,
+            brand:"KARLEGEN",
+            img:"https://www.ikea.com/in/en/images/products/karljan-chair-turquoise-kabusa-turquoise__0926962_pe789603_s5.jpg?f=xxs",
+            price:"4,599",
+            category:"chair"
+        },
+        {
+            id:32,
+            brand:"ODEGER",
+            img:"https://www.ikea.com/in/en/images/products/odger-chair-anthracite__1070852_pe854755_s5.jpg?f=xxs",
+            price:"6,799",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"SKRUVSTA",
+            img:"https://www.ikea.com/in/en/images/products/skruvsta-swivel-chair-vissle-grey__0923961_pe788457_s5.jpg?f=xxs",
+            price:"5,299",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"POANG",
+            img:"https://www.ikea.com/in/en/images/products/poaeng-armchair-brown-knisa-light-beige__0840421_pe666960_s5.jpg?f=xxs",
+            price:"13,299",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"VEBO",
+            img:"https://www.ikea.com/in/en/images/products/vedbo-armchair-gunnared-light-green__0949819_pe800036_s5.jpg?f=xxs",
+            price:"4,299",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"TEODORES",
+            img:"https://www.ikea.com/in/en/images/products/teodores-chair-black__1114239_pe871697_s5.jpg?f=xxs",
+            price:"1,299",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"LOBERGET",
+            img:"https://www.ikea.com/in/en/images/products/loberget-sibben-childrens-desk-chair-white__0828438_pe776597_s5.jpg?f=xxs",
+            price:"3,299",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"RENBERGET",
+            img:"https://www.ikea.com/in/en/images/products/renberget-swivel-chair-bomstad-black__1025981_pe834276_s5.jpg?f=xxs",
+            price:"9,299",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"PELLO",
+            img:"https://www.ikea.com/in/en/images/products/pello-armchair-holmby-natural__0841137_pe600889_s5.jpg?f=xxs",
+            price:"8,299",
+            category:"chair"
+        }, {
+            id:32,
+            brand:"MARICUS",
+            img:"https://www.ikea.com/in/en/images/products/marius-stool-black__0871991_pe595901_s5.jpg?f=xxs",
+            price:"3,299",
+            category:"chair"
+        },
+        {
+            id:32,
+            brand:"PAHAL",
+            img:"https://www.ikea.com/in/en/images/products/pahl-desk-top-shelf-white__1031733_pe836639_s5.jpg?f=xxs",
+            price:"11,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"VEBJORAN",
+            img:"https://www.ikea.com/in/en/images/products/vebjoern-desk-beige__0968742_pe810546_s5.jpg?f=xxs",
+            price:"3,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"BEKNAT",
+            img:"https://www.ikea.com/in/en/images/products/bekant-corner-desk-left-white-black__0854895_pe714703_s5.jpg?f=xxs",
+            price:"17,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"TORLAD",
+            img:"https://www.ikea.com/in/en/images/products/trotten-drawer-unit-white__1025908_pe834225_s5.jpg?f=xxs",
+            price:"40,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"LOMARAP",
+            img:"https://www.ikea.com/in/en/images/products/lommarp-desk-dark-blue-green__0741479_pe742381_s5.jpg?f=xxs",
+            price:"15,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"ALEX",
+            img:"https://www.ikea.com/in/en/images/products/lagkapten-alex-desk-white__1022432_pe832720_s5.jpg?f=xxs",
+            price:"13,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"SAMGORA",
+            img:"https://www.ikea.com/in/en/images/products/smagoera-desk-white__0973410_pe812008_s5.jpg?f=xxs",
+            price:"6,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"MALAM",
+            img:"https://www.ikea.com/in/en/images/products/malm-desk-white__0850916_pe602578_s5.jpg?f=xxs",
+            price:"5,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"KALLAX",
+            img:"https://www.ikea.com/in/en/images/products/kallax-linnmon-desk-combination-white__1097492_pe864988_s5.jpg?f=xxs",
+            price:"4,299",
+            category:"study table"
+        },
+        {
+            id:32,
+            brand:"PAHL",
+            img:"https://www.ikea.com/in/en/images/products/pahl-desk-with-shelf-unit-white-turquoise__1031732_pe836640_s5.jpg?f=xxs",
+            price:"3,299",
+            category:"study table"
+        },
+         {
+            id:32,
+            brand:"HUBU",
+            img:"https://www.ikea.com/in/en/images/products/flugbo-table-lamp-brass-colour-glass__0916785_pe785399_s5.jpg?f=xxs",
+            price:"299",
+            category:"Lamp"
+        },
+        {
+            id:32,
+            brand:"VISTRA",
+            img:"https://www.ikea.com/in/en/images/products/fado-table-lamp-white__1158343_pe888107_s5.jpg?f=xxs",
+            price:"899",
+            category:"Lamp"
+        },
+        {
+            id:32,
+            brand:"NAVELANGE",
+            img:"https://www.ikea.com/in/en/images/products/naevlinge-led-work-lamp-white__0725922_pe735092_s5.jpg?f=xxs",
+            price:"1199",
+            category:"Lamp"
+        },
+        {
+            id:32,
+            brand:"LAMPAN",
+            img:"https://www.ikea.com/in/en/images/products/lampan-table-lamp-dark-grey-white__0835436_pe778431_s5.jpg?f=xxs",
+            price:"599",
+            category:"Lamp"
+        },
+        {
+            id:32,
+            brand:"SOLKVINT",
+            img:"https://www.ikea.com/in/en/images/products/solklint-table-lamp-brass-grey-clear-glass__0842258_pe781834_s5.jpg?f=xxs",
+            price:"799",
+            category:"Lamp"
+        },
+        {
+            id:32,
+            brand:"FORSA",
+            img:"https://www.ikea.com/in/en/images/products/forsa-work-lamp-nickel-plated__0879261_pe614877_s5.jpg?f=xxs",
+            price:"1999",
+            category:"Lamp"
+        },
+        {
+            id:32,
+            brand:"ARSTID",
+            img:"https://www.ikea.com/in/en/images/products/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpg?f=xxs",
+            price:"1899",
+            category:"Lamp"
+        },
+        {
+            id:32,
+            brand:"SVALLET",
+            img:"https://www.ikea.com/in/en/images/products/svallet-work-lamp-dark-grey-white__0881047_pe724753_s5.jpg?f=xxs",
+            price:"899",
+            category:"Lamp"
+        },
+
+        
+        
+ ] -->
