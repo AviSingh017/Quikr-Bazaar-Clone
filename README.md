@@ -1,5 +1,5 @@
 # short-rod-3165
-Team Project (Quikr Clone)
+Team Project JS201 (Quikr Clone)
 ## Features
 
 <b>Featured Products</b>
