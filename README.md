@@ -10,8 +10,6 @@ Team Project JS201 (Quikr Clone)
 | List Products | &#10004; | Ability of List Products |
 | Edit a Product | &#10004; | Ability of Edit a Product |
 | Delete a Product | &#10004; | Ability of Delete a Product |
-| Stock | &#10004; | Ability of Update the Stock |
-| Stock History | &#10004; | Ability to see the Stock History |
 
 <b>Purchase Features</b>
 
